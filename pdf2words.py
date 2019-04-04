@@ -12,7 +12,10 @@ import nltk
 from nltk.book import *
 from nltk.corpus import stopwords
 import unicodedata
+
+
 #converts pdf, returns its text content as a string
+# if pdf is corrupt, this function return -1
 def pdf2text(fname, pages=None):
     if not pages:
         pagenums = set()
@@ -25,8 +28,13 @@ def pdf2text(fname, pages=None):
     interpreter = PDFPageInterpreter(manager, converter)
 
     infile = file(fname, 'rb')
-    for page in PDFPage.get_pages(infile, pagenums):
-        interpreter.process_page(page)
+    try:
+        for page in PDFPage.get_pages(infile, pagenums):
+            interpreter.process_page(page)
+    except:
+        print fname, "is corruptted."
+        return -1
+
     infile.close()
     converter.close()
     text = output.getvalue()

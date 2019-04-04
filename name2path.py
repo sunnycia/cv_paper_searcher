@@ -3,7 +3,7 @@ import os
 import glob
 import cPickle as pkl
 
-paper_folder_list = ['document/cvpr2017', 'document/cvpr2018', 'document/eccv2018']
+paper_folder_list = ['document/cvpr2017', 'document/cvpr2018', 'document/eccv2018', 'document/iccv2013', 'document/iccv2015', 'document/iccv2017', 'document/cvpr2013', 'document/cvpr2014', 'document/cvpr2015', 'document/cvpr2016']
 
 name_dict = {}
 
