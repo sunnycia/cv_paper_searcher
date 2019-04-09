@@ -32,3 +32,4 @@ A report with name of report_saliency.md will be generated, containing the paper
 ## TODO
 - [x] phrase search
 - [ ] multi-word search
+- [ ] fuzzy spelling

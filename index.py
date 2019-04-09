@@ -33,6 +33,14 @@ name_dict = load_dict(name_dict_path)
 # print name_dict;exit()
 key_word = args.keyword
 key_word = key_word.lower()
+
+phrase_flag=False
+multiword_flag=False
+if ' ' in keyword:
+    phrase_flag=True
+if ',' in keyword:
+    multiword_flag=True
+
 report_path = 'report_{}.md'.format(key_word)
 report = open(report_path, 'wb')
 report.write('|Index|Title|sentence|\n')
