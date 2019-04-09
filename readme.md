@@ -1,3 +1,4 @@
+
 # What this repo about?
 
 this repo is a simple cv paper(CVPR13~18; ICCV13,15,18; ECCV18) finder. You can easily find out the paper with the most key word you searched.
@@ -29,4 +30,5 @@ python index.py --keyword=saliency --rank=50
 A report with name of report_saliency.md will be generated, containing the paper names and the sentences with the keyword. 
 
 ## TODO
-
+- [x] phrase search
+- [ ] multi-word search
