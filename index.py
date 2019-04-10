@@ -48,7 +48,6 @@ report.write('|---|---|---|\n')
 
 # def tuple_sort(tuple_list):
 
-
 if not key_word in reverse_dict:
     print key_word, "not exist."
 else:

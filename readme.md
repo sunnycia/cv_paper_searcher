@@ -30,6 +30,6 @@ python index.py --keyword=saliency --rank=50
 A report with name of report_saliency.md will be generated, containing the paper names and the sentences with the keyword. 
 
 ## TODO
-- [x] phrase search
+- [ ] phrase search
 - [ ] multi-word search
 - [ ] fuzzy spelling
